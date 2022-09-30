@@ -1,4 +1,4 @@
-package br.com.alurafood.pagamentos;
+package br.com.alurafood;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
