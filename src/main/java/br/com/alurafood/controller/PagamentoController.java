@@ -20,6 +20,10 @@ public class PagamentoController {
     @Autowired
     private PagamentoService service;
 
+    @PatchMapping("/{id}/confirmar")
+    public void confirmarPagamento(@PathVariable @NotNull Long id){
+        service.confirmarPagamento(id);
+    }
     @GetMapping
     public Page<PagamentoDTO> listar(@PageableDefault(size = 10) Pageable paginacao) {
         return service.obterTodos(paginacao);
